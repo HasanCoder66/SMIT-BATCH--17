@@ -1,0 +1,65 @@
+@import url(index.css);
+
+/* .box 
+{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    position: fixed;
+}
+
+.box1 {
+   width: 200px;
+    height: 200px; 
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+}
+.box2 {
+   width: 200px;
+    height: 200px; 
+    background-color: blueviolet;
+    position: absolute;
+    z-index: 11;
+} */
+
+/* body {
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg?semt=ais_items_boosted&w=740);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+/* background: #3F5EFB;
+background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%); */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+
+ul  {
+display: flex;
+margin: 0px 25px;
+/* color: white; */
+}
+
+ul > li {
+    list-style-type: none;
+    padding: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}

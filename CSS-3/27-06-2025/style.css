@@ -1,0 +1,13 @@
+.main {
+    width: 100%;
+    background-color: red;
+    height: 400px;
+
+}
+
+.child {
+    width: 45% !important;
+    min-width: 50%;
+    background-color: blue;
+    height: 200px;
+}

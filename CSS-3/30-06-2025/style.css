@@ -1,0 +1,92 @@
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    padding: 50px ;
+    margin: 50px ;
+    text-align: center;
+
+} */
+/* .home {
+    display: none;
+}
+
+ul > li{
+    display: inline-block;
+}
+
+.name {
+    display: block;
+} */
+/* 
+ul > li {
+    list-style-type: decimal;
+}
+
+.box1{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    box-shadow: 5px 5px 5px 5px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ border-radius: 20px;
+ border-radius: 125px;
+} */
+/* .box2{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    visibility: hidden;
+}
+.box3{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+} */
+
+/* .one {
+    border: 2px solid black;
+    empty-cells: hide;
+}
+
+.mainBox {
+    color: blue;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.mainBox > p {
+    color: inherit;
+    color: white;
+    background-color: inherit;
+} */
+/* .container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+} */
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    position: absolute;
+    z-index: -1;
+    /* top: 100px;
+    right: -100px; */
+    /* right: 0;
+    bottom: 50px; */
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
