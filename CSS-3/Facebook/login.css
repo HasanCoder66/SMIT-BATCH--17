@@ -1,0 +1,153 @@
+body {
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 250px;
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.input-box {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.input-box>input,
+.input-box>div>input {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    /* border: 2px solid #0866ff; */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #0866ff;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.login {
+    background-color: #0866ff;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: blue;
+}
+
+.forget {
+    text-align: center;
+}
+
+.forget>a {
+    text-decoration: none;
+}
+
+.forget>a:hover {
+    text-decoration: underline;
+}
+
+
+.registerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42b72a;
+    width: 60%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px auto;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.para > span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .container {
+       flex-direction: column;
+       justify-content: center;
+    }
+}
+@media only screen and (max-width:425px) {
+    .container {
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    .para {
+        display: none;
+    }
+}
+@media only screen and (max-width:320px) {
+    .container {
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    .para {
+        display: none;
+    }
+    .box {
+        width: 280px;
+    }
+}
