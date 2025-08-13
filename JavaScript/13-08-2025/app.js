@@ -2,9 +2,12 @@ console.log("Hello World!")
 
 // var city = "Karachi"
 
-var cities = ["Karachi", "Lahore", "Islamabad", "Punjab"];
+var cities = ["Karachi", "Islamabad"];
 
+console.log(cities.length);
+cities[5] = "Punjab"
 console.log(cities);
+// cities[cities.length] = "Karachi"
 
 // console.log(cities[cities.length , "Peshawar"])
 // var returnValue = cities.pop()
