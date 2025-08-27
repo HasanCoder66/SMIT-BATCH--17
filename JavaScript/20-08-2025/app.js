@@ -83,7 +83,7 @@ var city3 = "Peshawar"
 
 
 
-// var cities = [city0, city1, city2, city3]        // literal notation
+var cities = [city0, city1, city2, city3]        // literal notation
 
 // var cities = new Array()  // object notation
 
@@ -106,10 +106,10 @@ var city3 = "Peshawar"
 // console.log(cities)
 
 
-// var returnValue = cities.pop()
-// console.log("Return Value ====>",returnValue)
+var returnValue = cities.pop()
+console.log("Return Value ====>",returnValue)
 
-// console.log(cities)
+console.log(cities)
 
 
 // var returnValue = cities.shift()
@@ -163,8 +163,8 @@ var city3 = "Peshawar"
 // }
 
 
-var tableNum = +prompt("Enter Your Table Number", 10);
+// var tableNum = +prompt("Enter Your Table Number", 10);
 
-for (var i = 1; i <= 10; i++) {
-console.log(`${tableNum} X ${i} = ${tableNum * i}`)
-}
+// for (var i = 1; i <= 10; i++) {
+// console.log(`${tableNum} X ${i} = ${tableNum * i}`)
+// }
