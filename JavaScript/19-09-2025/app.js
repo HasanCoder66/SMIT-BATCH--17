@@ -1,6 +1,9 @@
 function submit () {
-    var inputValue = document.getElementById("input").value
-    if(inputValue == "") {
-        console.log("please enter a value")
-    }
+
+    var inputValue = document.getElementById("input")
+    console.log(inputValue)
+
+    // if(inputValue == "") {
+    //     console.log("please enter a value")
+    // }
 }
