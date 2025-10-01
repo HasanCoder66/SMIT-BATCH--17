@@ -56,3 +56,7 @@ console.log(para.replace(/my/g, "$"))
 // console.log(text.toLowerCase() == text2.toLowerCase())
 
 // https://github.com/HasanCoder66/SMIT-BATCH--17/tree/main/JavaScript
+
+
+
+var arr = ["muhammad", "hasan", "ashraf"]
