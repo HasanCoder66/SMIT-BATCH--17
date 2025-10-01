@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    background-color: white;
+    background-color: red;
     /* width: 50%; */
     padding: 5px 10px;
 }
@@ -28,15 +28,8 @@ nav {
 }
 
 
-/* .box-1, */
-/* .box-2,
-.box-3 {
-   width: 150px;
-   background-color: #0866ff;
-} */
 .child {
    width: 50px;
-   background-color: #0866ff;
 }
 
 .logo{
@@ -54,4 +47,79 @@ border-radius: 50%;
 .input-box > input:hover {
     border: 1px solid #0866ff;
 
+}
+.profile > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dashboard Media queries */
+@media only screen and (max-width:768px) {
+  .input-box > input {
+        display: none;
+    }
+
+    .box-3 > .child > .icons  {
+        display: none;
+    }
+
+    .main {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box-3 {
+        width: 100px;
+    }
+}
+
+
+
+@media only screen and (max-width:576px) {
+.main {
+    width: 100%;
+    background-color: blue;
+
+}
 }

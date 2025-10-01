@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook | Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+
+  <body>
+    <nav class="d-flex justify-content-between p-2">
+      <!-- Logo box Start -->
+      <div
+        class="logoBox d-flex justify-content-between align-items-center gap-2"
+      >
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZJ6ZhyK5DAz81EXhSf_QOo8Z3PHM8zXoAA&s"
+          alt="FB-Logo"
+          width="50px"
+          height="50px"
+          class="logo"
+        />
+        <div class="input-box">
+          <input type="text" placeholder="Search Any thing" />
+        </div>
+      </div>
+      <!-- iconsBox-center -->
+      <div
+        class="iconsBox-center d-flex justify-content-between align-items-center gap-4"
+      >
+        <i class="fa-solid fa-house icons"></i>
+        <i class="fa-solid fa-play icons"></i>
+        <i class="fa-solid fa-store icons"></i>
+        <i class="fa-solid fa-users-rectangle icons"></i>
+        <i class="fa-solid fa-gamepad icons"></i>
+      </div>
+
+      <!-- iconsBox-right -->
+      <div
+        class="iconsBox-right d-flex justify-content-between align-items-center gap-4"
+      >
+        <i class="fa-solid fa-bars icons none"></i>
+        <i class="fa-brands fa-facebook-messenger icons none"></i>
+        <i class="fa-solid fa-bell icons none"></i>
+        <img
+          src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+          alt="Profile Pic"
+          width="50px"
+          height="50px"
+        />
+      </div>
+    </nav>
+
+    <!-- Main Parent -->
+    <div class="parent row">
+      <div class="leftBox col-12 col-sm-12 col-md-3">
+        <!-- 1 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Muhammad Hasan</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Meta AI</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Friends</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Professional Dashboard</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Feed</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Groups</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Marketplace</p>
+        </div>
+        <!-- 3 -->
+        <!-- <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Friends</p>
+        </div> -->
+        <!-- 3 -->
+        <!-- <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Friends</p>
+        </div> -->
+        <!-- 3 -->
+        <!-- <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Friends</p>
+        </div> -->
+      </div>
+
+      <!-- Feedbox -->
+      <div class="feedbox col-12 col-sm-12 col-md-6">
+        <!-- Whats on your mind -->
+        <div class="box">
+          <div class="firstBox d-flex p-4 align-items-center gap-2">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div class="button">
+              <!-- Button Trigger Modal -->
+              <button
+                type="button"
+                class="btn button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                What's On Your Mind, Muhammad?
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Create Post
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div
+                        class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2"
+                      >
+                        <div class="">
+                          <img
+                            src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                            alt="Profile Pic"
+                            width="40px"
+                            height="40px"
+                          />
+                        </div>
+                        <div>
+                          <p class="para">Muhammad Hasan</p>
+                          <p>
+                            <i class="fa-solid fa-globe"></i>
+                            Public
+                            <i class="fa-regular fa-square-caret-down"></i>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="input">
+                        <input type="text" placeholder="What's on Your Mind" id="description" />
+                      </div>
+
+                  
+                      <div class="addImage">
+                        <input type="file" id="image"> 
+                        <!-- <button class="bg-primary">Add Image</button> -->
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button onclick="post()" type="button" class="btn btn-primary">
+                        Post
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="secBox d-flex align-items-center justify-content-around">
+            <p  class="effect">
+              <span ><i class="fa-solid fa-video text-danger"></i></span> Live
+              Video
+            </p>
+            <p  class="effect">
+              <span><i class="fa-solid fa-image text-success"></i></span
+              >Photo/Video
+            </p>
+            <p  class="effect">
+              <span><i class="fa-solid fa-video text-danger"></i></span>Reel
+            </p>
+          </div>
+        </div>
+
+        <!-- Stories -->
+        <div class="stories d-flex gap-4 px-2">
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <p class="text-center">Create story</p>
+          </div>
+          <!-- 2 -->
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle-img d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://scontent.fkhi6-1.fna.fbcdn.net/v/t39.30808-6/541747536_1965262577555142_5272811170868064302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqS_P88D5RgqpVSvscdGF1DPvArNo-N5EM-8Cs2j43kcgevEk9jw5aHHVOSLPKZs-nCAxfzlf3vWvKSZr_TVk4&_nc_ohc=IBmEFNGzW9AQ7kNvwGrPeV0&_nc_oc=Adlp58UmSES0ns4q_56JBQ-_oq71OXNuB2TwFiY2Ve7AY6soJhcfuR-gZL_MLS9Leao&_nc_zt=23&_nc_ht=scontent.fkhi6-1.fna&_nc_gid=l57cKhLfTBTxVD_30pBF4w&oh=00_Afa3NogbpRvq2v6jw6R4twqCksg8CM9gMNvfGPS1vrINAg&oe=68E2BB64"
+                alt=""
+                height="40px"
+                width="40px"
+                class="rounded"
+              />
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </div>
+            <p class="text-center">Saima Eczee</p>
+          </div>
+          <!-- 3-->
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle-img d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://scontent.fkhi6-1.fna.fbcdn.net/v/t39.30808-6/541747536_1965262577555142_5272811170868064302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqS_P88D5RgqpVSvscdGF1DPvArNo-N5EM-8Cs2j43kcgevEk9jw5aHHVOSLPKZs-nCAxfzlf3vWvKSZr_TVk4&_nc_ohc=IBmEFNGzW9AQ7kNvwGrPeV0&_nc_oc=Adlp58UmSES0ns4q_56JBQ-_oq71OXNuB2TwFiY2Ve7AY6soJhcfuR-gZL_MLS9Leao&_nc_zt=23&_nc_ht=scontent.fkhi6-1.fna&_nc_gid=l57cKhLfTBTxVD_30pBF4w&oh=00_Afa3NogbpRvq2v6jw6R4twqCksg8CM9gMNvfGPS1vrINAg&oe=68E2BB64"
+                alt=""
+                height="40px"
+                width="40px"
+                class="rounded"
+              />
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </div>
+            <p class="text-center">Saima Eczee</p>
+          </div>
+          <!-- 4-->
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle-img d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://scontent.fkhi6-1.fna.fbcdn.net/v/t39.30808-6/541747536_1965262577555142_5272811170868064302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqS_P88D5RgqpVSvscdGF1DPvArNo-N5EM-8Cs2j43kcgevEk9jw5aHHVOSLPKZs-nCAxfzlf3vWvKSZr_TVk4&_nc_ohc=IBmEFNGzW9AQ7kNvwGrPeV0&_nc_oc=Adlp58UmSES0ns4q_56JBQ-_oq71OXNuB2TwFiY2Ve7AY6soJhcfuR-gZL_MLS9Leao&_nc_zt=23&_nc_ht=scontent.fkhi6-1.fna&_nc_gid=l57cKhLfTBTxVD_30pBF4w&oh=00_Afa3NogbpRvq2v6jw6R4twqCksg8CM9gMNvfGPS1vrINAg&oe=68E2BB64"
+                alt=""
+                height="40px"
+                width="40px"
+                class="rounded"
+              />
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </div>
+            <p class="text-center">Saima Eczee</p>
+          </div>
+          <!-- 5-->
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle-img d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://scontent.fkhi6-1.fna.fbcdn.net/v/t39.30808-6/541747536_1965262577555142_5272811170868064302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqS_P88D5RgqpVSvscdGF1DPvArNo-N5EM-8Cs2j43kcgevEk9jw5aHHVOSLPKZs-nCAxfzlf3vWvKSZr_TVk4&_nc_ohc=IBmEFNGzW9AQ7kNvwGrPeV0&_nc_oc=Adlp58UmSES0ns4q_56JBQ-_oq71OXNuB2TwFiY2Ve7AY6soJhcfuR-gZL_MLS9Leao&_nc_zt=23&_nc_ht=scontent.fkhi6-1.fna&_nc_gid=l57cKhLfTBTxVD_30pBF4w&oh=00_Afa3NogbpRvq2v6jw6R4twqCksg8CM9gMNvfGPS1vrINAg&oe=68E2BB64"
+                alt=""
+                height="40px"
+                width="40px"
+                class="rounded"
+              />
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </div>
+            <p class="text-center">Saima Eczee</p>
+          </div>
+          <!-- 6-->
+          <div class="storyCard">
+            <div class="img">
+              <img
+                src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+                alt="Profile Pic"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div
+              class="circle-img d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="https://scontent.fkhi6-1.fna.fbcdn.net/v/t39.30808-6/541747536_1965262577555142_5272811170868064302_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGqS_P88D5RgqpVSvscdGF1DPvArNo-N5EM-8Cs2j43kcgevEk9jw5aHHVOSLPKZs-nCAxfzlf3vWvKSZr_TVk4&_nc_ohc=IBmEFNGzW9AQ7kNvwGrPeV0&_nc_oc=Adlp58UmSES0ns4q_56JBQ-_oq71OXNuB2TwFiY2Ve7AY6soJhcfuR-gZL_MLS9Leao&_nc_zt=23&_nc_ht=scontent.fkhi6-1.fna&_nc_gid=l57cKhLfTBTxVD_30pBF4w&oh=00_Afa3NogbpRvq2v6jw6R4twqCksg8CM9gMNvfGPS1vrINAg&oe=68E2BB64"
+                alt=""
+                height="40px"
+                width="40px"
+                class="rounded"
+              />
+              <!-- <i class="fa-solid fa-plus"></i> -->
+            </div>
+            <p class="text-center">Saima Eczee</p>
+          </div>
+        </div>
+
+
+
+        <!-- Post Card -->
+         <div id="post" >
+
+        <!-- .... -->
+
+         </div>
+      </div>
+
+      <!-- Right Box -->
+      <div class="rightBox col-12 col-sm-12 col-md-3 none">
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Muhammad Hasan</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Arsh Jawed</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Malaika</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Subhan</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">shafiq</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">kamil</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Haroon</p>
+        </div>
+        <!-- 3 -->
+        <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Saad</p>
+        </div> 
+        <!-- 3 -->
+         <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Haris</p>
+        </div> 
+        <!-- 3 -->
+         <div class="d-flex align-items-center gap-2 profile-Section mt-2 mb-2">
+          <div class="">
+            <img
+              src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/460122515_1042389220807928_726285323978173438_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZxQ_dJNaxiMjRb6TyMGf6W7G3E0Yq9vpbsbcTRir2xCyE9INcc5I5ZgDi_4fpikN3Wayrf6taG2ZT-DLvd4t&_nc_ohc=OGWOGLgDxhQQ7kNvwHi4j79&_nc_oc=AdkiAJLNPF-uHGxfjgFN-U2r8DENC-AQn4JVv_9iluHuPtls4_E5nNrU3bcBc-S2p4Y&_nc_zt=23&_nc_ht=scontent.fkhi11-1.fna&_nc_gid=EvJApJDY9i-XyJK2IsoT2A&oh=00_AfZDjEY4Dil6DBtQehRHqqJXbXNYLxRwUPllIro5LTiGzA&oe=68E06685"
+              alt="Profile Pic"
+              width="40px"
+              height="40px"
+            />
+          </div>
+          <p class="para">Faisal</p>
+        </div>
+
+
+
+
+
+    
+        <!-- Right box end -->
+      </div>
+      <!--  -->
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

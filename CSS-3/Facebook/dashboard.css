@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  background-color: #f2f4f7;
+}
+
+.logoBox > img,
+.iconsBox-right > img,
+.leftBox > div img,
+.firstBox > .img img,
+.rightBox > .profile-Section > div img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.input-box > input {
+  width: 250px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 1 px solid black;
+}
+
+.input-box > input:hover {
+  border: 1px solid #0866ff;
+}
+.none {
+  display: block;
+}
+nav {
+  background-color: white;
+}
+
+.profile-Section:hover {
+  background-color: #f2f4f7 !important;
+  cursor: pointer;
+  border-radius: 10px;
+  /* display: flex; */
+}
+
+.profile-Section {
+  height: 50px;
+  padding-left: 20px;
+}
+.parent {
+  background-color: white;
+}
+.para {
+  margin-bottom: 0px !important;
+}
+
+.button,
+.modal-body > .input input {
+  width: 100%;
+  border: none;
+}
+
+.modal-body > .input {
+  width: 100%;
+  border-radius: 25px;
+  height: 40px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.modal-body > .input input:focus {
+  outline: none;
+}
+.addImage {
+  padding-left: 20px;
+}
+.button {
+  width: 100%;
+  border-radius: 25px;
+  height: 40px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.button > button:focus {
+  outline: none;
+}
+
+.box {
+  border-radius: 20px;
+  height: 125px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* background-color: white; */
+}
+
+.storyCard {
+  margin: 20px 0px;
+  height: 160px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.storyCard > .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f2f4f7;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 30px;
+  left: 24px;
+}
+
+.circle-img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* background-color: #f2f4f7; */
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.rounded {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 5px solid #0866ff;
+  border-radius: 20px;
+}
+
+/* Post Card Css */
+.postCard {
+  height: 600px;
+  /* width: 600px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.postCard > .postHeader > .firstSec > .firstSec-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.heading {
+  font-weight: bold;
+}
+.imageBox {
+  height: 400px;
+   /* min-height: 200px; */
+  /* max-height: 300px; */
+}
+.imageBox > img {
+  margin: 20px 0px;
+  height: 100%;
+  width: 100%;
+  /* background-position: center; */
+}
+.effect {
+  padding: 5px 5px;
+}
+
+.effect:hover {
+  background-color: #f2f4f7;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Dashboard Media queries */
+@media only screen and (max-width: 768px) {
+  .input-box > input {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+  .leftBox {
+    display: none;
+  }
+  .parent {
+    margin: 0px auto;
+  }
+  .imageBox {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .icons {
+    font-size: 20px;
+    gap: 0;
+  }
+  .logoBox > img,
+  .iconsBox-right > img {
+    width: 40px;
+    height: 40px;
+  }
+}
