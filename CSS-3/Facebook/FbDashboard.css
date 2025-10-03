@@ -48,7 +48,7 @@ nav {
 
 /* BoxIcons-Profile */
 .BoxIcons-Profile > img,
-.left > img, .img-Modal > img {
+.left > img, .img-Modal > img, .postCardHeader > div img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -62,7 +62,7 @@ nav {
 }
 
 /* Left  */
-.para {
+.para, .postCardHeader div p {
   margin-bottom: 0px;
   font-weight: bold;
 }
@@ -117,9 +117,29 @@ cursor: pointer;
 }
 
 
+/* postCard */
+.postCard {
+  /* height: 600px */
+  /* background-color: black; */
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+}
 
+.postCardHeader {
+  cursor: pointer;
+}
 
+.imgBox  {
+  height: 500px;
+  /* background-color: red; */
+}
 
+.imgBox > img {
+  height: 100%;
+  width: 100%;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
@@ -138,3 +158,16 @@ cursor: pointer;
     display: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .leftBox, .rightBox {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .inputBox {
+    display: none;
+  }
+}
+
