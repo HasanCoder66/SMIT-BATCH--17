@@ -113,13 +113,14 @@ var image = document.getElementById("image")
 var fbPost = document.getElementById("post")
 
 
+console.log(image)
 // if()
 // console.log(image.files[0])
 if(image.files && image.files[0]) {
     var file = image.files[0]
     var imageUrl = URL.createObjectURL(file)
 
-    console.log("Image Url ==>",imageUrl)
+    // console.log("Image Url ==>",imageUrl)
 fbPost.innerHTML += ` <div class="postCard px-4 py-2 mb-2">
             <div class="postHeader d-flex justify-content-between">
                 <div class="firstSec d-flex gap-3">
