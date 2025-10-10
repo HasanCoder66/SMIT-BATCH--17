@@ -28,3 +28,24 @@
 // let fullMailingAdd = street + " " + country
 
 // console.log("full mailing address ==>",fullMailingAdd)
+
+
+
+// Problem # 3
+
+// let score1 = 33
+// let score2 = 33
+// let score3 = 33
+
+// let totalScore  = score1 + score2 + score3
+
+// console.log(totalScore);
+
+
+// let plates = 20;
+// let people = 7;
+
+// let remainingPlates = plates - people
+
+
+// let message = `There are ${remainingPlates} plates available`
