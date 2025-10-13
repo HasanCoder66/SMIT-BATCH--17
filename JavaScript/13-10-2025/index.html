@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: black; */
+            /* color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .todoBox {
+            width: 400px;
+            min-height: 400px;
+            /* max-height: 800px; */
+            background-color: lightblue;
+            border-radius: 20px;
+            padding: 20px;
+            /* overflow: scroll; */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .inputBox {
+            background-color: orange;
+            height: 50px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+
+        .inputBox>input {
+            width: 70%;
+            height: 100%;
+            border-radius: 25px;
+            border: none;
+            background-color: white;
+            padding-left: 20px;
+        }
+
+        .inputBox>input:focus {
+            outline: none;
+        }
+
+        .inputBox>button {
+            width: 28%;
+            height: 100%;
+            border-radius: 25px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: white;
+            /* font-size: 16px; */
+
+        }
+      
+
+        ul > li {
+            list-style: none;
+            margin-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 10px ;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        ul > li i {
+            color: red;
+            cursor: pointer;
+        }
+
+        .delete {
+            width: 100%;
+            background-color: red;
+            border-radius: 25px;
+            height: 40px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="todoBox">
+        <h1>Todo App</h1>
+
+        <div class="inputBox">
+            <input type="text" placeholder="Enter Your Todo Items" id="todoText">
+            <button onclick="addTodoItems()"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <ul id="todoList">
+            
+            <!-- <li class="todoItems">hasan <i onclick="deleteSingleTodo()" class="fa-solid fa-xmark"></i> </li> -->
+
+        </ul>
+
+        <button class="delete" onclick="deleteAllTodoElem()">
+             Delete All <i class="fa-solid fa-trash-can"></i> 
+        </button>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
