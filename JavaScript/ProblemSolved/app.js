@@ -49,3 +49,17 @@
 
 
 // let message = `There are ${remainingPlates} plates available`
+
+
+
+
+
+// Problem # 4
+
+let fruits = ["apple", "banana", "mango", "orange", 125]
+let firstFruit = fruits[0]
+
+fruits[fruits.length -1] = "grapes"
+
+console.log("Actual Fruits Array --->",fruits)
+console.log("First Fruit Variable --->",firstFruit)
