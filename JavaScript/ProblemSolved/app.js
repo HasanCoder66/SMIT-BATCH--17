@@ -1,6 +1,25 @@
 // console.log("Hello World!")
 
 
+// Extra Task --> 
+
+function doNumLe (num1, num2) {
+// console.log(num1, num2) 
+if(num1 == num2){
+    return console.log("both values are equal")
+}
+if(num1 < num2){
+    console.log(num1 , " is greater than" , num2)
+}else {
+    console.log(num2, " is greater than" , num1)
+}
+}
+
+
+doNumLe(12, 12)
+
+
+
 // Problem # 1 
 
 // let firstName = "Muhammad"
@@ -56,10 +75,10 @@
 
 // Problem # 4
 
-let fruits = ["apple", "banana", "mango", "orange", 125]
-let firstFruit = fruits[0]
+// let fruits = ["apple", "banana", "mango", "orange", 125]
+// let firstFruit = fruits[0]
 
-fruits[fruits.length -1] = "grapes"
+// fruits[fruits.length -1] = "grapes"
 
-console.log("Actual Fruits Array --->",fruits)
-console.log("First Fruit Variable --->",firstFruit)
+// console.log("Actual Fruits Array --->",fruits)
+// console.log("First Fruit Variable --->",firstFruit)
