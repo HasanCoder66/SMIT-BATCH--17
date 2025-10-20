@@ -3,20 +3,20 @@
 
 // Extra Task --> 
 
-function doNumLe (num1, num2) {
-// console.log(num1, num2) 
-if(num1 == num2){
-    return console.log("both values are equal")
-}
-if(num1 < num2){
-    console.log(num1 , " is greater than" , num2)
-}else {
-    console.log(num2, " is greater than" , num1)
-}
-}
+// function doNumLe (num1, num2) {
+// // console.log(num1, num2) 
+// if(num1 == num2){
+//     return console.log("both values are equal")
+// }
+// if(num1 < num2){
+//     console.log(num1 , " is greater than" , num2)
+// }else {
+//     console.log(num2, " is greater than" , num1)
+// }
+// }
 
 
-doNumLe(12, 12)
+// doNumLe(12, 12)
 
 
 
