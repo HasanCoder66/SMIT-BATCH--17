@@ -82,3 +82,20 @@
 
 // console.log("Actual Fruits Array --->",fruits)
 // console.log("First Fruit Variable --->",firstFruit)
+
+
+
+// Problem # 5
+function calculateTotal (subTotal, tax) {
+    return subTotal + tax
+}
+
+let order1= calculateTotal(25, 25);
+let order2=calculateTotal(125, 25);
+let order3= calculateTotal(255, 25);
+
+
+console.log("Order 1-->",order1)
+console.log("Order 2-->",order2)
+console.log("Order 3-->",order3)
+
