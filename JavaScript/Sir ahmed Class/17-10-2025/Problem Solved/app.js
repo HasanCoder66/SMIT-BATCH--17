@@ -37,23 +37,22 @@
 
 
 
-function generate8CharacterPass () {
-    var pass = "";
-    var mixChar = "sd@#jf74al;sfdoiq+_)(ejhv;jkhoqijtqw378"
-    // console.log("function is running --->")
+// function generate8CharacterPass () {
+//     var pass = "";
+//     var mixChar = "sd@#jf74al;sfdoiq+_)(ejhv;jkhoqijtqw378"
+//     // console.log("function is running --->")
 
-    for(let i =0; i < 8; i++){
-        // console.log(mixChar[28])
-        let random = Math.floor(Math.random()  * mixChar.length)
-        // console.log(random)
+//     for(let i =0; i < 8; i++){
+//         // console.log(mixChar[28])
+//         let random = Math.floor(Math.random()  * mixChar.length)
+//         // console.log(random)
 
-        pass +=   mixChar[random]
-    }
-    console.log(pass)
+//         pass +=   mixChar[random]
+//     }
+//     console.log(pass)
 
-}
+// }
 
 
-
-generate8CharacterPass () 
+// generate8CharacterPass () 
 
