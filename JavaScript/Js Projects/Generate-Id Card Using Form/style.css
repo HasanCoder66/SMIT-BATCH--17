@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+/* background-color: black; */
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.formBox {
+    /* height: 500px; */
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+.idCard{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/236x/9f/2a/7b/9f2a7ba4c1486e705f1b086bbefdca4a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageBox {
+    /* height: 400px; */
+    /* width: 300px; */
+    height: 150px;
+    width: 150px;
+    background-color: #6851ff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.imageBox > img {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+}
+
+.infoBox {
+    height: 150px;
+    width: 300px;
+    /* background-color: #6851ff; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+}
