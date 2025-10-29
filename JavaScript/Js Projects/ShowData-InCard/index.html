@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f5f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #0078ff;
+  margin-bottom: 10px;
+}
+
+.item {
+  margin-bottom: 8px;
+}
+
+.item span {
+  font-weight: bold;
+  color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div id="mainUIComp">
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

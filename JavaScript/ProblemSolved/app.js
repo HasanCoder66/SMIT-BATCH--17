@@ -86,16 +86,37 @@
 
 
 // Problem # 5
-function calculateTotal (subTotal, tax) {
-    return subTotal + tax
+// function calculateTotal (subTotal, tax) {
+//     return subTotal + tax
+// }
+
+// let order1= calculateTotal(25, 25);
+// let order2=calculateTotal(125, 25);
+// let order3= calculateTotal(255, 25);
+
+
+// console.log("Order 1-->",order1)
+// console.log("Order 2-->",order2)
+// console.log("Order 3-->",order3)
+
+
+// Problem # 6
+
+let car = {
+    make :"Audi",
+    model :1574,
+    year : 2025,
+    colors : ["red", "green","black","white"],
+    hybrid : true,
+    drive : function () {
+        console.log("Car behtreeen tareeky sai chl rhai hai")
+    },
+    stop : function () {
+        console.log("Car ko rok diya hai meny")
+    }
 }
 
-let order1= calculateTotal(25, 25);
-let order2=calculateTotal(125, 25);
-let order3= calculateTotal(255, 25);
-
-
-console.log("Order 1-->",order1)
-console.log("Order 2-->",order2)
-console.log("Order 3-->",order3)
-
+console.log("Make -->", car.make)
+console.log("Car First Color -->", car.colors[0])
+car.drive()
+car.stop()
