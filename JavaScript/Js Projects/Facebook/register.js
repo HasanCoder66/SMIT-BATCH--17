@@ -12,7 +12,7 @@ function emptyFields(firstName, surName, email, password, date, month, year) {
         month.value = "",
         year = ""
 
-    console.log(firstName.value)
+    // console.log(firstName.value)
 }
 
 function signupHandler() {
@@ -108,4 +108,8 @@ function signupHandler() {
 
     emptyFields(firstName, surName, email, password, date, month, year)
 
+    setTimeout(function () 
+    {
+        window.location.href = "dashboard.html"
+    }, 2000)
 }
