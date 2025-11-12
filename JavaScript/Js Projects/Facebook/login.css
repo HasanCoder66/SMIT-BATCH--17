@@ -38,6 +38,7 @@ body {
     padding: 10px 0px;
     margin: 10px 0px;
     border-radius: 5px;
+    /* padding-left: 20px; */
     /* border: 2px solid #0866ff; */
 }
 
@@ -119,6 +120,10 @@ input::placeholder {
 
 a {
     text-decoration: none;
+}
+
+#eye {
+    cursor: pointer;
 }
 
 @media only screen and (max-width:768px) {
