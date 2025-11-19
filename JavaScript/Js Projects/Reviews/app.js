@@ -44,6 +44,7 @@ function manipulateData() {
     position.textContent = data[index].position
     description.innerText = data[index].description
 }
+
 function nextHandler() {
     if (index == data.length - 1) {
         index = 0
@@ -65,7 +66,6 @@ function prevHandler() {
         index--
     }
     manipulateData()
-
 }
 
 

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startScreen {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    border-radius: 10px;
+    height: 150px;
+    width: 300px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #292930;
+    margin: 10px 0px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-app-container {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+    width: 600px;
+}
+
+#main > .quiz-app-container > h1, #question, h3 , .resultScreen{
+    text-align: center;
+    margin: 10px 0px;
+}
+.resultScreen {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 20px;
+    border-radius: 10px;
+    height: 190px;
+    width: 400px;
+}
+.resultScreen > h1 {
+margin-bottom: 20px;
+}
