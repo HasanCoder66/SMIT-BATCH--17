@@ -1,12 +1,13 @@
-console.log("Global execution start-->")
+console.log("Global execution start -->") 
 
-var globalVar = "har jaga access hota hai";
+let globalVar = "har jaga access hota hai";
 
-function fnGlobal (){
+
+var fnGlobal = function (){
     console.log("mai global fn mai hon....")
 }
 
-fnGlobal()  
+fnGlobal()
 
 console.log(globalVar)
 

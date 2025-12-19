@@ -1,3 +1,6 @@
 console.log(`Value of X is:`, x)
 
-var a = 1;
+var x = 1;
+
+
+console.log(x)
