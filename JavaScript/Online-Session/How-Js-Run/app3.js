@@ -8,4 +8,4 @@ Promise.resolve().then(() => {
     console.log("this is from micro task queue..")
 })
 
-console.log("Global Execution Context End -->")c
+console.log("Global Execution Context End -->")

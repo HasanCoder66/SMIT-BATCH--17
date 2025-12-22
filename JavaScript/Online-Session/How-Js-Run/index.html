@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How JavaScript Run</title>
+
+    <style>
+      .parent {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 300px;
+        height: 300px;
+        border: 2px solid gray;
+        border-radius: 20px;
+      }
+      .parent > div > img {
+        width: 100%;
+        height: 80%;
+        border-radius: 20px;
+      }
+    </style>
   </head>
   <body>
     <h1>How JavaScript Run</h1>
@@ -17,11 +37,15 @@
       <li>Web API</li>
     </ul>
 
+    <div class="parent">
+      
+    </div>
+
     <!-- <script src="app0.js"></script> -->
     <!-- <script src="app1.js"></script> -->
     <!-- <script src="app2.js"></script> -->
-    <script src="app3.js"></script>
+    <!-- <script src="app3.js"></script> -->
 
-    <!-- <script src="syncOrAsync.js"></script> -->
+    <script src="syncOrAsync.js"></script>
   </body>
 </html>
