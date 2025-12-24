@@ -1,0 +1,55 @@
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsDe-jaqMC3q313uvjlOJ_qUc24oSAxWQIA&s");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .inputBox {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      .inputBox > input {
+        width: 80%;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+      }
+      .inputBox > input:focus {
+        outline: none;
+      }
+
+      .inputBox > button {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        height: 40px;
+        background-color: black;
+        color: white;
+      }
