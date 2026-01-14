@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    min-height: 80px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;   
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    margin-right: 80px;
+}
+.nav-item {
+    font-weight: 600;
+}
+
+.carousel-item img {
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#men > h1, #women > h1, #kid > h1 {
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px;
+    /* text-shadow: 5px 5px 5px gray; */
+}
+
+.cardParent {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}

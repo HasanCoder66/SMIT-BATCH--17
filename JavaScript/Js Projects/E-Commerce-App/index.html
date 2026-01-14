@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/index.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SMIT Commerce</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Womens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                All Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#men">Mens</a></li>
+                <li><a class="dropdown-item" href="#women">Womens</a></li>
+                <li><a class="dropdown-item" href="#kid">Kids</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+
+          <div class="btns">
+            <a href="/Pages/login.html">
+              <button type="button" class="btn btn-outline-primary">
+                Login
+              </button></a
+            >
+            <a href="/Pages/signup.html">
+              <button type="button" class="btn btn-outline-primary">
+                Signup
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Or Slider-->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1698305283043-7691a494f891?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mens Product -->
+    <section id="men">
+      <h1>Men's Product</h1>
+      <div class="cardParent" id="mensCardParent"></div>
+    </section>
+
+    <!-- Womens Product -->
+    <section id="women">
+      <h1>Women's Product</h1>
+      <div class="cardParent" id="womensCardParent">
+        <!-- Javascript ke through cards -->
+      </div>
+    </section>
+
+    <!-- Kids Product -->
+    <section id="kid">
+      <h1>Kid's Product</h1>
+      <div class="cardParent" id="kidsCardParent"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-black mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2026 Company, Inc. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-black">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-black">Terms of Service</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-black">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/JavasSript/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="/Styles/signup.css" />
+  </head>
+  <body>
+    <!-- From Uiverse.io by Yaya12085 -->
+    <form class="form" id="formSubmit">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get full access to our app.</p>
+      <div class="flex">
+        <label>
+          <input
+           required=""
+            placeholder=""
+            type="text"
+            class="input"
+            id="firstName"
+          />
+          <span>Firstname</span>
+        </label>
+
+        <label>
+          <input
+          required=""
+            placeholder=""
+            type="text"
+            class="input"
+            id="lastName"
+          />
+          <span>Lastname</span>
+        </label>
+      </div>
+
+      <label>
+        <input
+        required=""
+          placeholder=""
+          type="email"
+          class="input"
+          id="email"
+        />
+        <span>Email</span>
+      </label>
+
+      <label>
+        <input
+        required=""
+          placeholder=""
+          type="password"
+          class="input"
+          id="password"
+        />
+        <span>Password</span>
+      </label>
+      <label>
+        <input
+        required=""
+          placeholder=""
+          type="password"
+          class="input"
+          id="confirmPassword"
+        />
+        <span>Confirm password</span>
+      </label>
+      <button class="submit">Submit</button>
+      <p class="signin">
+        Already have an acount ? <a href="login.html">Signin</a>
+      </p>
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="/JavasSript/signup.js"></script>
+  </body>
+</html>
