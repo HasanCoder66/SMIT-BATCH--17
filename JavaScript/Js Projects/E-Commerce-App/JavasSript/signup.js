@@ -9,7 +9,7 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let confirmPassword = document.getElementById("confirmPassword");
 let formSubmit = document.getElementById("formSubmit");
-
+let existUser = false;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 // let users = JSON.parse(localStorage.getItem("users")) || []
 
@@ -40,7 +40,17 @@ const signUpHandler = (event) => {
   if (password.value != confirmPassword.value) {
     sweety("error", "Oops", "Password or Confirm Password are not Matched!");
   }
-  // console.log("check pass or confirm pass ==>",password.value != confirmPassword.value)
+
+  users.find((item) => {
+    if (item.email == email.value) {
+      existUser = true;
+    }
+  });
+
+  if (existUser) {
+    return sweety("error", "Oops", "This user is already register");
+  }
+
   let userObj = {
     firstName: firstName.value,
     lastName: lastName.value,
@@ -68,6 +78,7 @@ const signUpHandler = (event) => {
 
   formSubmit.reset();
   // console.log("mai chl raha hon", event.target)
+  // console.log("check pass or confirm pass ==>",password.value != confirmPassword.value)
 };
 
 formSubmit.addEventListener("submit", signUpHandler);
