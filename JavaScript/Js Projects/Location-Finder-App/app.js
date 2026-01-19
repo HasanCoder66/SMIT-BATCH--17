@@ -23,7 +23,7 @@ title.innerText = name.common
   // console.log(country)
   let result = await fetch(`https://restcountries.com/v3.1/name/${country}`)
   let data = await result.json()
-//   console.log(data)
+  console.log(data)
 showData(data)
 };
 

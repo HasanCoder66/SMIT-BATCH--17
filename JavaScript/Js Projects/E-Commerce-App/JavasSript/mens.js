@@ -1,29 +1,18 @@
-// console.log("javascript is running ==>")
-import {
-  mensProducts,
-  womensProducts,
-  kidsProducts,
-  sweety,
-} from "../DummyData/dummyData.js";
+// console.log("mens js connect ==>")
 
-// console.log(kidsProducts);
+import { mensProducts, sweety } from "../DummyData/dummyData.js";
 
-// Variables ==>
-let mensCardParent = document.getElementById("mensCardParent");
-let womensCardParent = document.getElementById("womensCardParent");
-let kidsCardParent = document.getElementById("kidsCardParent");
-let badge = document.getElementById("badge");
-console.log(badge);
-let btnsParent = document.querySelector(".btns");
-let logoutBtn = null;
-let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
-// console.log(btnsParent);
-let matchedProduct = false;
 let isLoggedInUser = JSON.parse(localStorage.getItem("isUser"));
-// console.log(isLoggedInUser);
+let btnsParent = document.querySelector(".btns");
+let formInput = document.querySelector(".form-control");
+let cartArray = JSON.parse(localStorage.getItem("cart")) || [];
+let mensCardParent = document.getElementById("mensCardParent");
+let searchForm = document.getElementById("searchForm");
 
 if (isLoggedInUser) {
   btnsParent.innerHTML = ` <button type="button" class="btn btn-outline-primary logoutBtn">Logout</button>`;
+  // btnsParent.innerHTML = "Hey User!"
+  // btnsParent.innerHTML = "Hey User!"
 } else {
   btnsParent.innerHTML = `<a href="/Pages/login.html"> <button type="button" class="btn btn-outline-primary">Login</button></a>
            <a href="/Pages/signup.html"> <button type="button" class="btn btn-outline-primary">
@@ -36,12 +25,6 @@ const updateBadge = () => {
   badge.innerText = totalCartQty;
 };
 
-const logoutHandler = () => {
-  localStorage.setItem("isUser", JSON.stringify(false));
-  window.location.reload();
-};
-
-// Functions ==>
 const card = (id, price, title, desc) => {
   //   console.log(title);
 
@@ -61,35 +44,34 @@ const card = (id, price, title, desc) => {
 };
 
 // mens card mapping ==>
-const mensCardMap = () => {
-  let returnVal = mensProducts.map((item) => {
+const mensCardMap = (data = mensProducts) => {
+
+  if (data.length == 0) {
+    return (mensCardParent.innerHTML = `<h1> No Product Found </h1>`);
+  }
+
+  let returnVal = data.map((item) => {
     return card(item?.id, item?.price, item?.title, item?.description);
   });
   mensCardParent.innerHTML = returnVal.join(" ");
-  // console.log(returnVal);
 };
 
-// womens card mapping ==>
-const womensCardMap = () => {
-  let returnVal = womensProducts.map((item) => {
-    return card(item?.id, item?.price, item?.title, item?.description);
-  });
-  womensCardParent.innerHTML = returnVal.join(" ");
-};
-
-// kids card mapping ==>
-const kidsCardMap = () => {
-  let returnVal = kidsProducts.map((item) => {
-    return card(item?.id, item?.price, item?.title, item?.description);
-  });
-  kidsCardParent.innerHTML = returnVal.join(" ");
-};
-
-const startApp = () => {
+const startMensApp = () => {
   updateBadge();
   mensCardMap();
-  womensCardMap();
-  kidsCardMap();
+};
+
+startMensApp();
+const searchHandler = () => {
+  event.preventDefault();
+  let searchValue = formInput.value.toLowerCase();
+
+  let filteredItems = mensProducts.filter((product) =>
+    product.title.toLowerCase().includes(searchValue),
+  );
+  
+  mensCardMap(filteredItems);
+  // console.log("hey!")
 };
 
 const addToCartHandler = (btn) => {
@@ -101,10 +83,7 @@ const addToCartHandler = (btn) => {
   let prodId = Number(btn.dataset.productId);
   console.log("My Product click id", prodId);
 
-  const product =
-    mensProducts.find((item) => item.id == prodId) ||
-    womensProducts.find((item) => item.id == prodId) ||
-    kidsProducts.find((item) => item.id == prodId);
+  const product = mensProducts.find((item) => item.id == prodId) 
   // console.log(product);
 
   let returnVal = cartArray.find((item) => item.id == prodId);
@@ -124,13 +103,8 @@ const addToCartHandler = (btn) => {
   updateBadge()
 };
 
-startApp();
-
+searchForm.addEventListener("submit", searchHandler);
 document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("logoutBtn")) {
-    // console.log("bhai sahab btn mil gaya ==>")
-    logoutHandler();
-  }
 
   if (e.target.classList.contains("addToCartBtn")) {
     addToCartHandler(e.target);
