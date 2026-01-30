@@ -150,3 +150,196 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // ];
 
 // localStorage.setItem("user", JSON.stringify(users));
+
+// * API
+
+// Fetch ==>
+
+// ES6
+// let apiRes = fetch("https://fakestoreapi.com/products")
+//   .then((result) => {
+//     return result.json();
+//   })
+//   .then((result) => {
+//     console.log(result);
+
+//     // document.body.innerHTML = `<h1> update </h1>`
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// console.log(apiRes);
+// apiRes.then((res) => console.log(res))
+// .then((result) => console.log(result));
+
+// apiRes.then((res) => res.json()).then((result) => console.log(result))
+
+// ES7 2022 Async await
+
+const apiCall = async () => {
+  try {
+    let apiRes = await fetch("https://fakestoreapi.com/products");
+
+    let result = await apiRes.json();
+
+    let [arr1, arr2, ...others] = result;
+    console.log(others);
+
+    let [other1] = others;
+    //    other1.title = "Womens"
+
+    console.log(other1);
+    console.log(result);
+
+    //    console.log(arr1)
+    //    console.log(arr2)
+    // throw "kuch bi"
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// apiCall()
+
+// * Destructuring, Rest & Spread Operators
+
+// let array = [1,2,3,4,5,6,7,8]
+
+// let [one, two, three, ...others] = array
+// console.log(others)
+
+let object = {
+  name: "Hasan",
+  age: 22,
+  skills: ["HTML", "CSS", "Javascript"],
+  address: {
+    city: "Karachi",
+  },
+  userName: "hasancoder66",
+  email: "codermhasan@gmail.com",
+};
+
+// let {name, skills, age, ...others} = object
+
+// console.log(others)
+
+// Spread Operator || Rest Operator ==> ... pehchan ==> rest wala = sai pehly ata hai spread wala = ke baad ataa
+
+// spread operator khol deta tha
+
+// console.log(name, skills, age)
+
+// console.log(one, two, three)
+
+// let newObj = {
+//     ...object,
+//     name : "Ayaan"
+// }
+
+// let deepCopy = Object.assign(object)
+// console.log(deepCopy)
+
+// let deepCopy = JSON.parse(JSON.stringify(object));
+
+// deepCopy.name = "Ayaan"
+
+// console.log(deepCopy)
+// console.log(object)
+
+// console.log(newObj)
+
+// Dry Principle ==> Do Not Repeat Yourself
+
+// Call, Bind, Apply   ==> use case this reference parent
+
+function getFullName (){
+    console.log(this.fullName)
+}
+let nameObj = {
+  fullName: "ayaan faheem",
+};
+
+let anotherObj = {
+  fullName: "Uzair Hashmi",
+
+};
+
+let thirdObj = {
+    fullName : "Rehan"
+}
+
+// getFullName.call(anotherObj)
+// getFullName.apply(anotherObj, ["Karachi", "Delhi"])
+
+// getFullName.call(thirdObj)
+// getFullName.apply(thirdObj,["karachi", "isalamabad"])
+
+// let returnFn = getFullName.bind(anotherObj)
+
+// returnFn()
+
+
+
+// * Map or Set
+
+// Set VS Array
+
+    // Constructor always return a new Object
+
+    let staff = ["Trainer", "Student", "Teacher", "Manager", "Teacher", "Manager", "HR"]
+    
+
+    let myArr = new Set(staff)
+
+    
+    // let myArr = [...new Set(staff)]
+
+    
+    // console.log(myArr.add("Reciptionist"))
+    // console.log(myArr.has("HR"))
+
+
+    // new Map()
+
+    // Map vs Object 
+    let objectnum = {
+        
+    }
+
+    let newObj = new Map()
+
+    console.log(newObj.set(1, 1))
+    // console.log(newObj.set(true, false))
+    // console.log(newObj.set(null, false))
+    // console.log(newObj.set(undefined, false))
+    // console.log(newObj.set({}, false))
+    // console.log(newObj.set([], false))
+    // console.log(newObj.set(() => {}, false))
+    // console.log(newObj.set({}, false))
+
+    // console.log(newObj.set( false))
+
+
+    // console.log(newObj.size)
+    // console.log(newObj.__proto__)
+
+
+
+
+    class Storage {
+        constructor (age, ){
+            this.age = age
+        }
+    }
+
+    
+
+
+    let myClass = new Storage (22)
+    console.log(myClass)
+
+
+
+
+
