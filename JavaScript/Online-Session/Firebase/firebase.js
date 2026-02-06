@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
+  deleteUser,
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
 
 import {
@@ -13,7 +14,10 @@ import {
   doc,
   setDoc,
   getDoc,
-  collection, query, where, getDocs
+  collection,
+  query,
+  getDocs,
+  deleteDoc,
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -43,14 +47,14 @@ const signupHandler = (username, email, password) => {
       console.log("signup user ==>", user);
 
       addUserData(
+        "users",
         {
           username: username,
           email: email,
           password: password,
         },
         user.uid,
-      )
-
+      );
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -89,7 +93,7 @@ const getCurrentUser = () => {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/auth.user
       const uid = user.uid;
-      console.log(uid)
+      console.log(uid);
       // console.log(user, "mera pooora user hai ye ==>");
       // console.log("Curretn User Id ==>", uid);
       // ...
@@ -126,11 +130,11 @@ const logoutHandler = () => {
     });
 };
 
-const addUserData = async (userDetails, uniqueId) => {
+const addUserData = async (collection, userDetails, uniqueId) => {
   try {
     // Add a new document in collection "cities"
     console.log("dataa add ker rahaa hon ==>");
-    await setDoc(doc(db, "users", uniqueId), userDetails);
+    await setDoc(doc(db, collection, uniqueId), userDetails);
 
     console.log("dataa add kerdiya db mai ==>");
   } catch (error) {
@@ -139,32 +143,64 @@ const addUserData = async (userDetails, uniqueId) => {
 };
 
 const getSingleUser = async (uniqueId) => {
+  const docRef = doc(db, "users", uniqueId);
+  const docSnap = await getDoc(docRef);
 
-const docRef = doc(db, "users", uniqueId);
-const docSnap = await getDoc(docRef);
-
-if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data());
-} else {
-  // docSnap.data() will be undefined in this case
-  console.log("No such document!");
-}
-}
+  if (docSnap.exists()) {
+    // console.log("Document data:", docSnap.data());
+    return docSnap.data();
+  } else {
+    // docSnap.data() will be undefined in this case
+    console.log("No such document!");
+  }
+};
 
 const getMultipleUsers = async () => {
-let users = []
-const q = query(collection(db, "users"));
+  let users = [];
+  const q = query(collection(db, "users"));
 
-const querySnapshot = await getDocs(q);
+  const querySnapshot = await getDocs(q);
 
-querySnapshot.forEach((doc) => {
-  // doc.data() is never undefined for query doc snapshots
-  users.push(doc.data())
-  // console.log(users, "Users ka array hai ==>")
-  // console.log(doc.id, " => ", doc.data());
-});
-return users
-}
+  querySnapshot.forEach((doc) => {
+    // console.log(doc)
+    // doc.data() is never undefined for query doc snapshots
+
+    users.push({
+      ...doc.data(),
+      id: doc.id,
+    });
+
+    // console.log(users, "Users ka array hai ==>")
+    // console.log(doc.id, " => ", doc.data());
+  });
+  return users;
+};
+
+const deleteDocumentandUser = async (collection, id) => {
+  try {
+    console.log("delete ker rahaa ho");
+    await deleteDoc(doc(db, collection, id));
+
+    const user = auth.currentUser;
+
+  deleteUser(user)
+    .then(() => {
+      // User deleted.
+      console.log("user deleted successfully ==>");
+    })
+    .catch((error) => {
+      console.log(error.code, "error ayaa ==> ");
+      console.log(error.message, "error ayaa ==>");
+      // An error ocurred
+      // ...
+    });
+    console.log("delete kerdiyaaa ===>");
+  } catch (error) {
+    console.log(error.code, "Error ayaa ==>");
+    console.log(error.message, "Error ayaa ==>");
+  }
+};
+
 
 
 export {
@@ -174,5 +210,6 @@ export {
   logoutHandler,
   addUserData,
   getSingleUser,
-  getMultipleUsers
+  getMultipleUsers,
+ deleteDocumentandUser
 };
