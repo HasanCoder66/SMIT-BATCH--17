@@ -1,3 +1,4 @@
+import { uploadImage } from "./cloudinary.js";
 import {
   addUserData,
   getCurrentUser,
@@ -13,6 +14,7 @@ let password = document.getElementById("exampleInputPassword1");
 let formFile = document.getElementById("formFile");
 let description = document.getElementById("floatingTextarea");
 let saveBtn = document.getElementById("saveBtn");
+
 
 getCurrentUser();
 
@@ -33,9 +35,21 @@ const delay2s = () => {
   }, 2000);
 }
 
-const saveChangesHandler = () => {
+const saveChangesHandler = async () => {
   console.log("mai chl rahaa hoon ==>");
 
+  console.log(formFile.files[0], "Input File ==>")
+
+    const formData = new FormData();
+
+  
+    let file = formFile.files[0]
+    formData.append('file', file);
+    formData.append('upload_preset', 'uploadImg');
+
+    let secure_url = await uploadImage(formData)
+
+    console.log(secure_url)
   // return
   addUserData(
     "users",
@@ -44,6 +58,7 @@ const saveChangesHandler = () => {
       email: email.value,
       password: password.value,
       description: description.value,
+      profilePic : secure_url
     },
     id,
   );
@@ -57,7 +72,7 @@ async function dum() {
   let htmlForPappa = allUsers.map((user) => {
     console.log(user.profilePic)
     return `   <div data-id=${user.id} class="card" style="width: 18rem;">
-  <img src=${user.profilePic || "https://res-console.cloudinary.com/dpvxkqhi8/thumbnails/v1/image/upload/v1760005240/Y2R4L29zbWFuX2doYXppX3ViYzluaA==/drilldown"} class="card-img-top" alt="...">
+  <img src=${user.profilePic} class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${user.username}</h5>
     <p class="card-text">${user.description || "No Description Added yet!"}</p>
