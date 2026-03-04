@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: rgba(120, 14, 14, 0.401);
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  padding: 8px;
+  background-color: rgb(6, 53, 53);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 10px;
+  
+}
+
+ul {
+   display: flex;
+  /* justify-content: space-evenly; */
+  gap: 50px;
+  align-items: center;
+}
+
+ul > li {
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 5px;
+  /* background-color: blue; */
+  border: none;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgb(6, 53, 53);
+}
+
+.bg-red{
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
