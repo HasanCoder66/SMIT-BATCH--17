@@ -66,16 +66,16 @@
 
 
 
-import React from 'react'
+// import React from 'react'
 
-const App = () => {
-  return (
-    //React Fragment
-    <div>
-      <div>1</div>
-      <div>2</div>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     //React Fragment
+//     <div>
+//       <div>1</div>
+//       <div>2</div>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
