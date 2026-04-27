@@ -3,9 +3,11 @@ import "../App.css"
 import { Button, Input } from '../components'
 import { useDispatch, useSelector } from 'react-redux'
 import {signup} from '../redux/features/authSlice/authSlice.js'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Signup = () => {
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     email : "",
     password : "",
@@ -24,8 +26,11 @@ const Signup = () => {
 
     console.log("user signup successfully!", form)
     
-
+navigate("/login")
     dispatch(signup(form))
+
+
+
     // setForm({
     //   email : "",
     //   password : "",
@@ -73,7 +78,8 @@ setForm((prev) => ({...prev, [field]:val}))
         </div>
 
         <div>
-          <Button title={"Signup"} signupHandler={signupHandler}/>
+          <Button title={"Signup"} handler={signupHandler}/>
+          <Link to="/login"><Button title={"login to your account"} /></Link>
         </div>
     </div>
   )

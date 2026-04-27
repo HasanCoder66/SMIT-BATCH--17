@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = React.memo(({ title, signupHandler }) => {
+const Button = React.memo(({ title, handler }) => {
   return (
-    <button className='w-full bg-[#292930] py-2 rounded-2xl text-white mt-4 mb-4 cursor-pointer active:scale-98' onClick={signupHandler}>{title}</button>
+    <button className='w-full bg-[#292930] py-2 rounded-2xl text-white mt-4 mb-4 cursor-pointer active:scale-98' onClick={handler}>{title}</button>
   )
 })
 
