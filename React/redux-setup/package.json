@@ -1,5 +1,5 @@
 {
-  "name": "redux-02",
+  "name": "redux-setup",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +12,12 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/vite": "^4.2.4",
-    "latest": "^0.2.0",
+    "axios": "^1.15.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.14.2",
+    "redux-persist": "^6.0.0",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {

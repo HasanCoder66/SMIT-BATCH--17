@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import "../App.css"
 import { Button, Input } from '../components'
 import { useDispatch, useSelector } from 'react-redux'
-import {signup} from '../redux/features/authSlice/authSlice.js'
+import {signup} from '../redux/features/auth/authSlice.js'
+import { useNavigate } from 'react-router-dom'
 
 
 const Signup = () => {
@@ -14,6 +15,7 @@ const Signup = () => {
 
   const dispatch = useDispatch()
   const user = useSelector((state) => console.log(state.auth))
+const navigate = useNavigate()
 
   const signupHandler = () => {
 
@@ -26,6 +28,10 @@ const Signup = () => {
     
 
     dispatch(signup(form))
+
+    setTimeout(() => {
+      navigate("/login")
+    },1000)
     // setForm({
     //   email : "",
     //   password : "",

@@ -2,22 +2,21 @@ import React, { useState } from 'react'
 import "../App.css"
 import { Button, Input } from '../components'
 import { useDispatch, useSelector } from 'react-redux'
-import {signup} from '../redux/features/authSlice/authSlice.js'
+import {login} from '../redux/features/auth/authSlice.js'
 
 
-const Signup = () => {
+const Login = () => {
   const [form, setForm] = useState({
     email : "",
-    password : "",
-    userName : ""
+    password : ""
   })
 
   const dispatch = useDispatch()
-  const user = useSelector((state) => console.log(state.auth))
+  const user = useSelector((state) => console.log(state))
 
-  const signupHandler = () => {
+  const loginHandler = () => {
 
-    if(!form.email.trim() || !form.password.trim() || !form.userName.trim()) {
+    if(!form.email.trim() || !form.password.trim() ) {
       console.log("please fill all the fields")
       return 
     }
@@ -25,7 +24,7 @@ const Signup = () => {
     console.log("user signup successfully!", form)
     
 
-    dispatch(signup(form))
+    dispatch(login(form))
     // setForm({
     //   email : "",
     //   password : "",
@@ -41,19 +40,12 @@ setForm((prev) => ({...prev, [field]:val}))
   }
 
   return (
-    <div className='p-4 rounded-2xl shadow-2xl w-112.5 bg-white '>
+    <div className='p-4 rounded-2xl shadow-2xl w-[450px] bg-white '>
 
-        <h1 className='mb-4 font-semibold text-center text-2xl'>Create your account</h1>
+        <h1 className='mb-4 font-semibold text-center text-2xl'>Welocme Back Login!</h1>
 
         <div className='flex flex-wrap gap-5'>
-            <Input
-            type="text"
-            placeholder="Enter your username"
-            value = {form.userName}
-            field="userName"
-            // handler={setForm}
-            handler={handlerStateUpdate}
-            />
+           
             <Input
             type="text"
             placeholder="Enter your email"
@@ -73,10 +65,10 @@ setForm((prev) => ({...prev, [field]:val}))
         </div>
 
         <div>
-          <Button title={"Signup"} signupHandler={signupHandler}/>
+          <Button title={"Login"} signupHandler={loginHandler}/>
         </div>
     </div>
   )
 }
 
-export default Signup
+export default Login
