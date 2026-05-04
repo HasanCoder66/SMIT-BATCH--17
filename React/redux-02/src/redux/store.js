@@ -6,12 +6,10 @@ import {
   persistReducer,
 } from "redux-persist";
 
-import storage from "redux-persist/lib/storage"; 
-
 const persistConfig = {
   key: "root",
+  // storage: typeof window !== "undefined" ? localStorage : undefined,
   storage,
-  
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
