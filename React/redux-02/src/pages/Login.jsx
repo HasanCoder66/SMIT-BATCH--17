@@ -3,6 +3,7 @@ import "../App.css"
 import { Button, Input } from '../components'
 import { useDispatch, useSelector } from 'react-redux'
 import {login} from '../redux/features/authSlice/authSlice.js'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
@@ -11,6 +12,7 @@ const Login = () => {
     password : ""
   })
 
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const user = useSelector((state) => console.log(state))
 
@@ -21,10 +23,12 @@ const Login = () => {
       return 
     }
 
-    console.log("user signup successfully!", form)
+    console.log("user login successfully!", form)
     
 
     dispatch(login(form))
+
+    navigate("/dashboard")
     // setForm({
     //   email : "",
     //   password : "",
@@ -65,7 +69,8 @@ setForm((prev) => ({...prev, [field]:val}))
         </div>
 
         <div>
-          <Button title={"Login"} signupHandler={loginHandler}/>
+          <Button title={"Login"} handler={loginHandler}/>
+          <Link to="/signup"><Button title={"create a new account"} /></Link>
         </div>
     </div>
   )
