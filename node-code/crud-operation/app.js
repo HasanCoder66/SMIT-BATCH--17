@@ -1,16 +1,58 @@
 import express from 'express'
+import morgan from 'morgan'
+import dotenv from 'dotenv'
 
+
+dotenv.config()
 const app = express()
 
+console.log("env file", process.env.PORT);
+
+
+const connectDb = () => {
+console.log(process.env.MONGO_URI);
+}
+
+connectDb()
+
+// middleware
 app.use(express.json())
 
+app.use((req, res,next) =>{
+    console.log("middleware mai request ayee...");
+
+    next()
+})
+
+// app.use((req, res,next) =>{
+//     console.log("second middleware mai request ayee...");
+
+//    req.requestTime = new Date().toISOString()
+//    next()
+// })
+
+
+
+// app.use((req, res,next) =>{
+//    let isUser = false;
+
+//    if(isUser) return next()
+
+//    return res.status(400).json({
+//     status : false,
+//     message:"bad request"
+//    })
+// })
+
+app.use(morgan("combined"))
 
 let users = []
 
 app.get("/", (req, res) => {
     res.status(200).json({
         status: true,
-        message: "Hello from the server!"
+        message: "Hello from the server!",
+        // time : req.requestTime
     })
 })
 
@@ -24,7 +66,7 @@ app.post("/user", (req, res) => {
 
     users.push(userObj)
 
-    res.status(200).json({
+    res.status(201).json({
         status: true,
         message: "user created",
     })
@@ -40,7 +82,7 @@ app.get("/user", (req, res) => {
     })
 })
 
-app.get("/user/:username", (req, res) => {
+app.get("/user/:username",(req, res) => {
 
     // console.log("req params -->",req.params.username);
 
