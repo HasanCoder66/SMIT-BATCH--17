@@ -1,7 +1,13 @@
 import express from 'express'
 import morgan from 'morgan'
 import dotenv from 'dotenv'
+import mongoose from 'mongoose'
+import dns from 'node:dns'
 
+dns.setServers([
+        "1.1.1.1",
+        "8.8.8.8"
+])
 
 dotenv.config()
 const app = express()
@@ -9,11 +15,16 @@ const app = express()
 console.log("env file", process.env.PORT);
 
 
-const connectDb = () => {
-console.log(process.env.MONGO_URI);
+const connectDb = async () => {
+    try {
+       await mongoose.connect(process.env.MONGO_URI);
+       console.log("DB Connected");
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-connectDb()
+
 
 // middleware
 app.use(express.json())
@@ -145,4 +156,5 @@ app.delete("/user/:username", (req, res) => {
 
 app.listen(6500, () => {
     console.log(`server is listening on port 6500`);
+    connectDb()
 })
