@@ -2,18 +2,23 @@ import dns from 'node:dns'
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import User from './model/UserSchema.js'
-
 
 dns.setServers([
     "8.8.8.8","1.1.1.1"
 ])
 dotenv.config()
 
+
+
+
+
 const app = express()
 const PORT = process.env.PORT || 6500
 
 app.use(express.json())
+app.use(cors())
 
 const connectDB = async () => {
     try {
@@ -29,6 +34,19 @@ app.get("/", (req, res) => {
     res.send({
         status:true,
         message :"hello from the server"
+    })
+})
+
+app.get("/user", async (req, res) => {
+
+
+    const users = await User.find()
+// console.log("users -->",users);
+
+    res.status(200).json({
+        status : true,
+        message :"user data retrieved",
+        data : users
     })
 })
 
