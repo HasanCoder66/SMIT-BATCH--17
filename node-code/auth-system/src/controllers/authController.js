@@ -1,7 +1,8 @@
 import User from '../models/UserModel.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-
+import { v4 as uuidv4 } from 'uuid';
+import { sendEmailOTP } from '../utils/sendEmail.js';
 
 const signup = async (req, res, next) => {
     try {
@@ -17,7 +18,13 @@ const signup = async (req, res, next) => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword  = await bcrypt.hash(password, salt)
 
-        const user = new User({...req.body, password : hashedPassword});
+        const otp = uuidv4().slice(0,7)
+
+        let returnSendEmailOTPHandler = await sendEmailOTP(email, otp)
+
+        console.log(returnSendEmailOTPHandler);
+
+        const user = new User({...req.body, password : hashedPassword, otp });
         await user.save()
 
         return res.status(200).json({
@@ -31,6 +38,7 @@ const signup = async (req, res, next) => {
 }
 
 const login =  async (req, res, next) => {
+    console.log("handler chlaa -->");
     try {
         let token ;
         const {email , password} = req.body;

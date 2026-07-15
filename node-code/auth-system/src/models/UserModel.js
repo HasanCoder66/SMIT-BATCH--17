@@ -14,7 +14,13 @@ const userSchema = new mongoose.Schema({
     password : {
         type:String,
         minLength : 8
-    }
+    },
+    otp:{
+        type:String
+    },
+    // otpExpiry:{
+
+    // }
 
     
 })
