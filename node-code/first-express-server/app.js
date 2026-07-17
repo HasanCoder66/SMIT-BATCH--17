@@ -1,5 +1,7 @@
 // console.log("js is running");
+const connectDb = async () => {
 
+}
 
 const express = require("express")
 
