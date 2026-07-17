@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Chat application</h1>
+    <h1 id="heading">Chat Application </h1>
+
+    <div class="chat-appContainer">
+<div id="joinBtn-container">
+    <h4 id="show-online-users">Online Users : 0</h4>
+   <div>
+    <input type="text" placeholder="Enter your name to join chat.." id="chat-userName">
+     <button class="joinBtn" id="joinBtn">Join Chat</button>
+   </div>
+</div>
+
+<div class="chat-area">
 
     <div>
-        <input type="text" placeholder="Enter a message" id="input">
-        <button id="btn">Send</button>
+        <p class="text-center" id="notify">Notification </p>
     </div>
 
-    <ul id="messagesArea">
+    <ul id="messages">
 
     </ul>
-    <script src="/socket.io/socket.io.js"></script>
+</div>
+
+        <div id="messageInputContainer">
+            <input type="text" id="messageInput" placeholder="Enter your message">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="socket.io/socket.io.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
