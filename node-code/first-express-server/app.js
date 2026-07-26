@@ -1,4 +1,5 @@
 // console.log("js is running");
+<<<<<<< HEAD
 
 
 // const express = require("express")
@@ -18,6 +19,28 @@ let users = [
         
 const app = express()
 app.use(express.json())
+=======
+const connectDb = async () => {
+
+}
+
+const express = require("express")
+
+let users = [
+    {
+        name: "ayaan faheem",
+        age: 13,
+        email: "ayanfaheem@gmail.com"
+    },
+    {
+        name: "ayaan hashmi",
+        age: 18,
+        email: "ayanhashmi@gmail.com"
+    },
+]
+
+const app = express()
+>>>>>>> cb8504043c78a0112883c60770ad967db56c667d
 
 app.get("/", (req, res) => {
   
@@ -29,6 +52,7 @@ app.get("/users", (req, res) => {
     res.status(200).send(users)
 })
 
+<<<<<<< HEAD
 app.post("/user", (req, res) => {
 
     users.push(req.body);
@@ -39,6 +63,8 @@ app.post("/user", (req, res) => {
     })
 })
 
+=======
+>>>>>>> cb8504043c78a0112883c60770ad967db56c667d
 
 
 app.listen(5500, () => {

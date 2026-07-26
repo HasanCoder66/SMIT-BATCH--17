@@ -5,13 +5,21 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start:dev": "nodemon app.js",
     "start":"node app.js"
+=======
+    "start:dev": "nodemon app.js"
+>>>>>>> cb8504043c78a0112883c60770ad967db56c667d
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "module",
+=======
+  "type": "commonjs",
+>>>>>>> cb8504043c78a0112883c60770ad967db56c667d
   "dependencies": {
     "express": "^5.2.1",
     "nodemon": "^3.1.14"
