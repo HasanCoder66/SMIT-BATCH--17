@@ -187,8 +187,9 @@ const menu = (category) => {
         </div>`
         return cardHTML
     })
-    // console.log(returnItems)
+    console.log(returnItems)
 
+    
     cardParent.innerHTML = returnItems.join("")
 
 
